@@ -17,7 +17,7 @@ export function createMovieCard(movie) {
         src="${imageBaseURL}w342${poster_path}"
         alt="${title}"
         class="img-cover"
-        loading='lazy'
+        loading="lazy"
       />
     </figure>
     <h4 class="title">${title}</h4>
@@ -38,12 +38,7 @@ export function createMovieCard(movie) {
       <div class="card-badge">${release_date.split('-')[0]}</div>
     </div>
 
-    <a
-      href="./detail.html"
-      class="card-btn"
-      title="${title}"
-    >
-    </a>
+    <a href="./detail.html" class="card-btn" title="${title}" onclick='getMovieDetail(${id})'> </a>
   `;
 
   return card;
